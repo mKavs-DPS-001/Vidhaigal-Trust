@@ -157,7 +157,9 @@ const Home = () => {
                   <div className="p-6">
                     <span className="text-sm text-primary font-bold mb-2 block">{item.date}</span>
                     <h4 className="text-xl font-bold text-text-dark mb-4 group-hover:text-primary transition-colors">{item.title}</h4>
-                    <Link to="#" className="text-secondary font-bold hover:underline">Read More →</Link>
+                    <Link to="#" className="text-secondary font-bold hover:underline">
+                      Read More <span className="sr-only">about the article: {item.title}</span> →
+                    </Link>
                   </div>
                 </div>
               ))}

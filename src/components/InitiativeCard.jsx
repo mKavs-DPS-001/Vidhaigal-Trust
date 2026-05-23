@@ -53,9 +53,8 @@ const InitiativeCard = ({ initiative, index }) => {
         <Link 
           to={`/initiatives`} 
           className="inline-block text-center w-full py-3 border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-colors"
-          aria-label={`${t('initiatives.learnMore')} about ${initiative.title}`}
         >
-          {t('initiatives.learnMore')}
+          {t('initiatives.learnMore')} <span className="sr-only">about {initiative.title}</span>
         </Link>
       </div>
     </motion.div>

@@ -3,12 +3,12 @@ import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaTimes } from 'react-icons/fa';
-import platingDriveImg from '../assets/platingdrive.png';
-import waterWellImg from '../assets/waterwell.png';
-import schoolcampImg from '../assets/school.png';
-import medicalCampImg from '../assets/medicalcamp.png';
-import RallyImg from '../assets/awareness.png';
-import womenrallyImg from '../assets/womentraining.png';
+import platingDriveImg from '../assets/platingdrive.webp';
+import waterWellImg from '../assets/waterwell.webp';
+import schoolcampImg from '../assets/school.webp';
+import medicalCampImg from '../assets/medicalcamp.webp';
+import RallyImg from '../assets/awareness.webp';
+import womenrallyImg from '../assets/womentraining.webp';
 
 const Gallery = () => {
   const { t } = useTranslation();

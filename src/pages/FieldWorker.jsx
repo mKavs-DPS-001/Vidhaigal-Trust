@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const districtMapping = {
   Chennai: { project: "Green Canopy Project", gps: "13.0827° N, 80.2707° E" },
@@ -119,7 +120,13 @@ const FieldWorker = () => {
   };
 
   return (
-    <div className="bg-[#F3F4F6] min-h-screen pt-20 pb-12 w-full">
+    <>
+      <Helmet>
+        <title>Field Reporter | Vidhaigal Trust</title>
+        <meta name="description" content="Official Field Reporter portal for Vidhaigal Trust workers to submit progress reports, upload photographic evidence, and sync activity data." />
+      </Helmet>
+
+      <div className="bg-[#F3F4F6] min-h-screen pt-20 pb-12 w-full">
       {/* Phone-like container */}
       <div className="max-w-sm mx-auto bg-[#F3F4F6] sm:shadow-2xl sm:rounded-3xl sm:border-[8px] sm:border-gray-800 sm:overflow-hidden relative min-h-[800px]">
         
@@ -356,6 +363,7 @@ const FieldWorker = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

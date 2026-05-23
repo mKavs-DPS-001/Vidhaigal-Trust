@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { MapContainer, TileLayer, CircleMarker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
@@ -39,7 +40,13 @@ const markers = [
 
 const Impact = () => {
   return (
-    <div className="pt-20 bg-white">
+    <>
+      <Helmet>
+        <title>Our Impact | Vidhaigal Trust</title>
+        <meta name="description" content="Explore our interactive impact map tracking environmental canopy tree plantings, village solar installations, digital education drives, and clean water access across Tamil Nadu districts." />
+      </Helmet>
+
+      <div className="pt-20 bg-white">
       {/* A) HERO STRIP */}
       <section className="bg-primary py-20 text-center text-white">
         <h1 className="text-5xl font-extrabold text-white mb-4">Impact Map</h1>
@@ -195,6 +202,7 @@ const Impact = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

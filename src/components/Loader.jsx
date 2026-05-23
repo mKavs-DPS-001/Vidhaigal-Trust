@@ -1,8 +1,14 @@
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 
 const Loader = () => {
   return (
-    <div className="fixed inset-0 bg-beige z-[100] flex flex-col items-center justify-center">
+    <>
+      <Helmet>
+        <title>Loading... | Vidhaigal Trust</title>
+        <meta name="description" content="Loading the official portal of Vidhaigal Trust. Please wait..." />
+      </Helmet>
+      <div className="fixed inset-0 bg-beige z-[100] flex flex-col items-center justify-center">
       <motion.div
         animate={{
           scale: [1, 1.2, 1],
@@ -26,6 +32,7 @@ const Loader = () => {
         Planting Seeds...
       </motion.h2>
     </div>
+    </>
   );
 };
 

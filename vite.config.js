@@ -8,4 +8,19 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: './', // CRITICAL: Fixes MIME error and blank screen issues on deployments
+  build: {
+    target: 'esnext',
+    minify: 'terser', // Advanced compression and minification
+    cssCodeSplit: true,
+    rollupOptions: {
+      output: {
+        manualChunks: (id) => {
+          if (id.includes('node_modules')) {
+            return 'vendor'; // Groups all third-party dependencies into a separate chunk
+          }
+        },
+      },
+    },
+  },
 })

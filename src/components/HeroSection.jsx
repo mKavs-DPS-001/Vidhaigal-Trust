@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import heroBgImg from '../assets/hero_bg.png';
+import heroBgImg from '../assets/hero_bg.webp';
 
 const HeroSection = () => {
   const { t } = useTranslation();
@@ -15,6 +15,10 @@ const HeroSection = () => {
           src={heroBgImg} 
           alt="Hero Background" 
           className="w-full h-full object-cover"
+          width="1920"
+          height="1080"
+          loading="eager"
+          fetchpriority="high"
         />
       </div>
 

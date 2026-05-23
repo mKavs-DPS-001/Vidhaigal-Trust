@@ -1,10 +1,10 @@
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
-import teamRamesh from '../assets/team_ramesh.png';
-import teamPriya from '../assets/team_priya.png';
-import teamSuresh from '../assets/team_suresh.png';
-import teamAnita from '../assets/team_anita.png';
+import teamRamesh from '../assets/team_ramesh.webp';
+import teamPriya from '../assets/team_priya.webp';
+import teamSuresh from '../assets/team_suresh.webp';
+import teamAnita from '../assets/team_anita.webp';
 const About = () => {
   const { t } = useTranslation();
 
